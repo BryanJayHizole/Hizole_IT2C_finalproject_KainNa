@@ -1,45 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <menu>
-    <starters>
-        <code>A1</code>
-        <category>Starters</category>
-        <name>Smoked Salmon</name>
-        <price>P250</price>
-    </starters>
-    <lunch>
-        <code>B1</code>
-        <category>Lunch</category>
-        <name>Pork Adobo</name>
-        <price>P160</price>
-    </lunch>
-    <dinner>
-        <code>C1</code>
-        <category>Dinner</category>
-        <name>Fried Chicken</name>
-        <price>P150</price>
-    </dinner>
-    <dessert>
-        <code>D1</code>
-        <category>Dessert</category>
-        <name>Ice Cream</name>
-        <price>P120</price>
-    </dessert>
-    <drinks>
-        <code>E1</code>
-        <category>Drinks</category>
-        <name>Soda</name>
-        <price>P30</price>
-    </drinks>
-    <wine>
-        <code>F1</code>
-        <category>Wine</category>
-        <name>Red Wine</name>
-        <price>P200</price>
-    </wine>
-    <specialties>
-        <code>X1</code>
-        <category>Specialties</category>
-        <name>Sisig</name>
-        <price>P110</price>
-    </specialties>
+  <starters>
+    <code>A1</code>
+    <category>Starters</category>
+    <name>Steamed Salmon</name>
+    <price>P200</price>
+  </starters>
+  <lunch>
+    <code>B1</code>
+    <category>Lunch</category>
+    <name>Pork Adobo</name>
+    <price>P160</price>
+  </lunch>
+  <dinner>
+    <code>C1</code>
+    <category>Dinner</category>
+    <name>Fried Chicken</name>
+    <price>P150</price>
+  </dinner>
+  <dessert>
+    <code>D1</code>
+    <category>Dessert</category>
+    <name>Ice Cream</name>
+    <price>P120</price>
+  </dessert>
+  <drinks>
+    <code>E1</code>
+    <category>Drinks</category>
+    <name>Soda</name>
+    <price>P30</price>
+  </drinks>
+  <wine>
+    <code>F1</code>
+    <category>Wine</category>
+    <name>Red Wine</name>
+    <price>P200</price>
+  </wine>
+  <specialties>
+    <code>X1</code>
+    <category>Specialties</category>
+    <name>Sisig</name>
+    <price>P110</price>
+  </specialties>
+  <starters>
+    <code>A2</code>
+    <category>Starters</category>
+    <name>Salad</name>
+    <price>50</price>
+  </starters>
 </menu>

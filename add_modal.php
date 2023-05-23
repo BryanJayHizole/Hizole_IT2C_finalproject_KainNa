@@ -56,7 +56,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
                 
-                <button type="submit" name="publishLunch" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Publish </a>
+                <button type="submit" name="publishStarters" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Publish </a>
             </div>
 
             </form>
@@ -188,7 +188,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
                 
-                <button type="submit" name="publishLunch" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Publish </a>
+                <button type="submit" name="publishDinner" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Publish </a>
             </div>
 
             </form>
@@ -254,7 +254,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
                 
-                <button type="submit" name="publishLunch" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Publish </a>
+                <button type="submit" name="publishDessert" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Publish </a>
             </div>
 
             </form>
@@ -320,7 +320,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
                 
-                <button type="submit" name="publishLunch" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Publish </a>
+                <button type="submit" name="publishDrinks" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Publish </a>
             </div>
 
             </form>
@@ -386,7 +386,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
                 
-                <button type="submit" name="publishLunch" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Publish </a>
+                <button type="submit" name="publishWine" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Publish </a>
             </div>
 
             </form>
@@ -452,7 +452,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
                 
-                <button type="submit" name="publishLunch" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Publish </a>
+                <button type="submit" name="publishSpecialties" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Publish </a>
             </div>
 
             </form>
