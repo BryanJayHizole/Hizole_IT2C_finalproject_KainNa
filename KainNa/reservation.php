@@ -1,3 +1,17 @@
+<?php
+
+SESSION_START();
+
+if (isset($_SESSION['ses_useremail']) === false){
+  header("Location: index.php?logfirst");
+}
+else if (isset($_REQUEST['logout']) === true){
+  session_destroy();
+  header("Location: index.php?logout");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +57,7 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.php">
+						<a href="home.php">
 							<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
 						</a>
 					</div>
@@ -53,7 +67,7 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="index.php">Home</a>
+									<a href="home.php">Home</a>
 								</li>
 
 								<li>
@@ -104,7 +118,7 @@
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="index.php" class="txt19">Home</a>
+				<a href="home.php" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">
