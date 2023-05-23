@@ -16,7 +16,7 @@ else if (isset($_REQUEST['logout']) === true){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home</title>
+	<title>KainNa</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -57,7 +57,7 @@ else if (isset($_REQUEST['logout']) === true){
 					<!-- Logo -->
 					<div class="logo">
 						<a href="home.php">
-							<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
+							<img src="images/logo.png" alt="IMG-LOGO" >
 						</a>
 					</div>
 
@@ -207,7 +207,7 @@ else if (isset($_REQUEST['logout']) === true){
 						</span>
 
 						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
-							Pato Place
+							KainNa
 						</h2>
 
 						<div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
@@ -226,7 +226,7 @@ else if (isset($_REQUEST['logout']) === true){
 						</span>
 
 						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-							Pato Place
+							KainNa
 						</h2>
 
 						<div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
@@ -245,7 +245,7 @@ else if (isset($_REQUEST['logout']) === true){
 						</span>
 
 						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
-							Pato Place
+							KainNa
 						</h2>
 
 						<div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
@@ -305,7 +305,7 @@ else if (isset($_REQUEST['logout']) === true){
 			</span>
 
 			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
-				Pato Place
+				KainNa
 			</h3>
 		</div>
 

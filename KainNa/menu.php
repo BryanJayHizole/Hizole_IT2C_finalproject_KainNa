@@ -15,7 +15,7 @@ else if (isset($_REQUEST['logout']) === true){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Menu</title>
+	<title>KainNa</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -58,7 +58,7 @@ else if (isset($_REQUEST['logout']) === true){
 					<!-- Logo -->
 					<div class="logo">
 						<a href="home.php">
-							<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
+							<img src="images/logo.png" alt="IMG-LOGO" >
 						</a>
 					</div>
 
@@ -201,7 +201,7 @@ else if (isset($_REQUEST['logout']) === true){
 	<!-- Title Page -->
 	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/bg-title-page-01.jpg);">
 		<h2 class="tit6 t-center">
-			Pato Menu
+			KainNa Menu
 		</h2>
 	</section>
 

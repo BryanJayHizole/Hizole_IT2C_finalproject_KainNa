@@ -16,7 +16,7 @@ else if (isset($_REQUEST['logout']) === true){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Blog Detail</title>
+	<title>KainNa</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -59,7 +59,7 @@ else if (isset($_REQUEST['logout']) === true){
 					<!-- Logo -->
 					<div class="logo">
 						<a href="home.php">
-							<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
+							<img src="images/logo.png" alt="IMG-LOGO" >
 						</a>
 					</div>
 
