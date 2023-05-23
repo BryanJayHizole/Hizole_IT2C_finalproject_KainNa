@@ -70,7 +70,15 @@ if(isset($_REQUEST['login']) === true){
 					<!-- Logo -->
 					<div class="logo">
 						<a href="home.php">
-							<img src="images/logo.png" alt="IMG-LOGO" >
+							<?php
+							$imagePath = 'images/logo.png'; 
+
+							if (file_exists($imagePath)) {
+								echo '<img src="images/logo.png" alt="IMG-LOGO" >';
+							} else {
+								echo 'Image not found.';
+							}
+							?>
 						</a>
 					</div>
 
@@ -259,53 +267,33 @@ if(isset($_REQUEST['login']) === true){
 
 					<!-- Gallery footer -->
 					<div class="wrap-gallery-footer flex-w">
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
-						</a>
+						<?php
+						$imagePaths = array(
+							"images/photo-gallery-01.jpg",
+							"images/photo-gallery-02.jpg",
+							"images/photo-gallery-03.jpg",
+							"images/photo-gallery-04.jpg",
+							"images/photo-gallery-05.jpg",
+							"images/photo-gallery-06.jpg",
+							"images/photo-gallery-07.jpg",
+							"images/photo-gallery-08.jpg",
+							"images/photo-gallery-09.jpg",
+							"images/photo-gallery-10.jpg",
+							"images/photo-gallery-11.jpg",
+							"images/photo-gallery-12.jpg"
+						);
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
+						foreach ($imagePaths as $index => $imagePath) {
+							$thumbnailPath = "images/photo-gallery-thumb-" . sprintf("%02d", $index + 1) . ".jpg";
+							$lightboxData = "gallery-footer";
+							$altText = "GALLERY";
+						?>
+						<a class="item-gallery-footer wrap-pic-w" href="<?php echo $imagePath; ?>" data-lightbox="<?php echo $lightboxData; ?>">
+							<img src="<?php echo $thumbnailPath; ?>" alt="<?php echo $altText; ?>">
 						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-04.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-04.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-08.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-08.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-12.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-12.jpg" alt="GALLERY">
-						</a>
+						<?php
+						}
+						?>
 					</div>
 
 				</div>

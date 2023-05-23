@@ -57,7 +57,12 @@ else if (isset($_REQUEST['logout']) === true){
 					<!-- Logo -->
 					<div class="logo">
 						<a href="home.php">
-							<img src="images/logo.png" alt="IMG-LOGO" >
+						<?php
+							$imagePath = 'images/logo.png';
+
+							echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="IMG-LOGO">' : 'Image not found.';
+						?>
+
 						</a>
 					</div>
 
@@ -158,39 +163,75 @@ else if (isset($_REQUEST['logout']) === true){
 			<!-- Gallery -->
 			<div class="wrap-gallery-sidebar flex-w">
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-01.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-02.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-03.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-05.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-06.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-07.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-09.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-10.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-11.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 			</div>
 		</div>
@@ -270,7 +311,7 @@ else if (isset($_REQUEST['logout']) === true){
 				<div class="col-md-6 p-t-45 p-b-30">
 					<div class="wrap-text-welcome t-center">
 						<span class="tit2 t-center">
-							Italian Restaurant
+							KAINNA Restaurant
 						</span>
 
 						<h3 class="tit3 t-center m-b-35 m-t-5">
@@ -278,7 +319,10 @@ else if (isset($_REQUEST['logout']) === true){
 						</h3>
 
 						<p class="t-center m-b-22 size3 m-l-r-auto">
-							Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
+							<?php 
+							echo "Indulge your senses in a culinary journey like no other. We invite you to experience a delightful fusion of flavors, expertly crafted dishes, and a warm, inviting ambiance. Our talented chefs and dedicated staff are here to create an unforgettable dining experience for you.";
+							?>
+						
 						</p>
 
 						<a href="about.php" class="txt4">
@@ -324,9 +368,7 @@ else if (isset($_REQUEST['logout']) === true){
 									Romantic Restaurant
 								</h4></a>
 
-								<p class="m-b-20">
-									Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-								</p>
+						
 
 								<a href="#" class="txt4">
 									Learn More
@@ -348,9 +390,7 @@ else if (isset($_REQUEST['logout']) === true){
 									Delicious Food
 								</h4></a>
 
-								<p class="m-b-20">
-									Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna
-								</p>
+								
 
 								<a href="#" class="txt4">
 									Learn More
@@ -372,9 +412,7 @@ else if (isset($_REQUEST['logout']) === true){
 									Red Wines You Love
 								</h4></a>
 
-								<p class="m-b-20">
-									Sed ornare ligula eget tortor tempor, quis porta tellus dictum.
-								</p>
+								
 
 								<a href="#" class="txt4">
 									Learn More
@@ -411,7 +449,7 @@ else if (isset($_REQUEST['logout']) === true){
 								<img src="images/our-menu-01.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size4">
+								<a href="menu-lunch.ph" class="btn2 flex-c-m txt5 ab-c-m size4">
 									Lunch
 								</a>
 							</div>
@@ -423,7 +461,7 @@ else if (isset($_REQUEST['logout']) === true){
 								<img src="images/our-menu-05.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size5">
+								<a href="menu-dinner.php" class="btn2 flex-c-m txt5 ab-c-m size5">
 									Dinner
 								</a>
 							</div>
@@ -435,8 +473,8 @@ else if (isset($_REQUEST['logout']) === true){
 								<img src="images/our-menu-13.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size6">
-									Happy Hour
+								<a href="menu-specialties.php" class="btn2 flex-c-m txt5 ab-c-m size6">
+									Specialties
 								</a>
 							</div>
 						</div>
@@ -451,7 +489,7 @@ else if (isset($_REQUEST['logout']) === true){
 								<img src="images/our-menu-08.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size7">
+								<a href="menu-drinks.php" class="btn2 flex-c-m txt5 ab-c-m size7">
 									Drink
 								</a>
 							</div>
@@ -463,7 +501,7 @@ else if (isset($_REQUEST['logout']) === true){
 								<img src="images/our-menu-10.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size8">
+								<a href="menu-starters.php" class="btn2 flex-c-m txt5 ab-c-m size8">
 									Starters
 								</a>
 							</div>
@@ -475,7 +513,7 @@ else if (isset($_REQUEST['logout']) === true){
 								<img src="images/our-menu-16.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size9">
+								<a href="menu-dessert.php" class="btn2 flex-c-m txt5 ab-c-m size9">
 									Dessert
 								</a>
 							</div>
@@ -1237,54 +1275,35 @@ else if (isset($_REQUEST['logout']) === true){
 
 					<!-- Gallery footer -->
 					<div class="wrap-gallery-footer flex-w">
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
-						</a>
+						<?php
+						$imagePaths = array(
+							"images/photo-gallery-01.jpg",
+							"images/photo-gallery-02.jpg",
+							"images/photo-gallery-03.jpg",
+							"images/photo-gallery-04.jpg",
+							"images/photo-gallery-05.jpg",
+							"images/photo-gallery-06.jpg",
+							"images/photo-gallery-07.jpg",
+							"images/photo-gallery-08.jpg",
+							"images/photo-gallery-09.jpg",
+							"images/photo-gallery-10.jpg",
+							"images/photo-gallery-11.jpg",
+							"images/photo-gallery-12.jpg"
+						);
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
+						foreach ($imagePaths as $index => $imagePath) {
+							$thumbnailPath = "images/photo-gallery-thumb-" . sprintf("%02d", $index + 1) . ".jpg";
+							$lightboxData = "gallery-footer";
+							$altText = "GALLERY";
+						?>
+						<a class="item-gallery-footer wrap-pic-w" href="<?php echo $imagePath; ?>" data-lightbox="<?php echo $lightboxData; ?>">
+							<img src="<?php echo $thumbnailPath; ?>" alt="<?php echo $altText; ?>">
 						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-04.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-04.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-08.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-08.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-12.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-12.jpg" alt="GALLERY">
-						</a>
+						<?php
+						}
+						?>
 					</div>
+
 
 				</div>
 			</div>

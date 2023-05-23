@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <menu>
   <starters>
     <code>A1</code>
@@ -44,3 +45,51 @@
   </specialties>
   
 </menu>
+
+<galleryItems>
+    <item>
+        <image>images/photo-gallery-13.jpg</image>
+        <alt>IMG-GALLERY</alt>
+        <category>events guests</category>
+    </item>
+    <item>
+        <image>images/photo-gallery-14.jpg</image>
+        <alt>IMG-GALLERY</alt>
+        <category>food</category>
+    </item>
+    <item>
+        <image>images/photo-gallery-15.jpg</image>
+        <alt>IMG-GALLERY</alt>
+        <category>events</category>
+    </item>
+    <item>
+        <image>images/photo-gallery-16.jpg</image>
+        <alt>IMG-GALLERY</alt>
+        <category>food</category>
+    </item>
+    <item>
+        <image>images/photo-gallery-17.jpg</image>
+        <alt>IMG-GALLERY</alt>
+        <category>food</category>
+    </item>
+    <item>
+        <image>images/photo-gallery-18.jpg</image>
+        <alt>IMG-GALLERY</alt>
+        <category>interior guests</category>
+    </item>
+    <item>
+        <image>images/photo-gallery-19.jpg</image>
+        <alt>IMG-GALLERY</alt>
+        <category>interior</category>
+    </item>
+    <item>
+        <image>images/photo-gallery-20.jpg</image>
+        <alt>IMG-GALLERY</alt>
+        <category>interior</category>
+    </item>
+    <item>
+        <image>images/photo-gallery-21.jpg</image>
+        <alt>IMG-GALLERY</alt>
+        <category>events</category>
+    </item>
+</galleryItems>

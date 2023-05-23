@@ -58,7 +58,7 @@ else if (isset($_REQUEST['logout']) === true){
 					<!-- Logo -->
 					<div class="logo">
 						<a href="home.php">
-							<img src="imageslogo.png" alt="IMG-LOGO">
+							<img src="images/logo.png" alt="IMG-LOGO">
 						</a>
 					</div>
 
@@ -156,42 +156,77 @@ else if (isset($_REQUEST['logout']) === true){
 				Gallery
 			</h4>
 
-			<!-- Gallery -->
 			<div class="wrap-gallery-sidebar flex-w">
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-01.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-02.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-03.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-05.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-06.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-07.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-09.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-10.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
+				<?php
+					$imagePath = 'images/photo-gallery-thumb-11.jpg';
+
+					echo file_exists($imagePath) ? '<img src="'.$imagePath.'" alt="GALLERY">' : 'Image not found.';
+				?>
 				</a>
 			</div>
 		</div>
@@ -232,87 +267,69 @@ else if (isset($_REQUEST['logout']) === true){
 		</div>
 
 		<div class="wrap-gallery isotope-grid flex-w p-l-25 p-r-25">
-			<!-- - -->
-			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events guests">
-				<img src="images/photo-gallery-13.jpg" alt="IMG-GALLERY">
+			<?php
+			$galleryItems = [
+				[
+					"src" => "images/photo-gallery-13.jpg",
+					"alt" => "IMG-GALLERY",
+					"class" => "events guests"
+				],
+				[
+					"src" => "images/photo-gallery-14.jpg",
+					"alt" => "IMG-GALLERY",
+					"class" => "food"
+				],
+				[
+					"src" => "images/photo-gallery-15.jpg",
+					"alt" => "IMG-GALLERY",
+					"class" => "events"
+				],
+				[
+					"src" => "images/photo-gallery-16.jpg",
+					"alt" => "IMG-GALLERY",
+					"class" => "food"
+				],
+				[
+					"src" => "images/photo-gallery-17.jpg",
+					"alt" => "IMG-GALLERY",
+					"class" => "food"
+				],
+				[
+					"src" => "images/photo-gallery-18.jpg",
+					"alt" => "IMG-GALLERY",
+					"class" => "interior guests"
+				],
+				[
+					"src" => "images/photo-gallery-19.jpg",
+					"alt" => "IMG-GALLERY",
+					"class" => "interior"
+				],
+				[
+					"src" => "images/photo-gallery-20.jpg",
+					"alt" => "IMG-GALLERY",
+					"class" => "interior"
+				],
+				[
+					"src" => "images/photo-gallery-21.jpg",
+					"alt" => "IMG-GALLERY",
+					"class" => "events"
+				]
+			];
 
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-search" href="images/photo-gallery-13.jpg" data-lightbox="gallery"></a>
+			foreach ($galleryItems as $item) {
+				?>
+				<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom <?php echo $item['class']; ?>">
+					<img src="<?php echo $item['src']; ?>" alt="<?php echo $item['alt']; ?>">
+
+					<div class="overlay-item-gallery trans-0-4 flex-c-m">
+						<a class="btn-show-gallery flex-c-m fa fa-search" href="<?php echo $item['src']; ?>" data-lightbox="gallery"></a>
+					</div>
 				</div>
-			</div>
-
-			<!-- - -->
-			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
-				<img src="images/photo-gallery-14.jpg" alt="IMG-GALLERY">
-
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-search" href="images/photo-gallery-14.jpg" data-lightbox="gallery"></a>
-				</div>
-			</div>
-
-			<!-- - -->
-			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events">
-				<img src="images/photo-gallery-15.jpg" alt="IMG-GALLERY">
-
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-search" href="images/photo-gallery-15.jpg" data-lightbox="gallery"></a>
-				</div>
-			</div>
-
-			<!-- - -->
-			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
-				<img src="images/photo-gallery-16.jpg" alt="IMG-GALLERY">
-
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-search" href="images/photo-gallery-16.jpg" data-lightbox="gallery"></a>
-				</div>
-			</div>
-
-			<!-- - -->
-			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
-				<img src="images/photo-gallery-17.jpg" alt="IMG-GALLERY">
-
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-search" href="images/photo-gallery-17.jpg" data-lightbox="gallery"></a>
-				</div>
-			</div>
-
-			<!-- - -->
-			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom interior guests">
-				<img src="images/photo-gallery-18.jpg" alt="IMG-GALLERY">
-
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-search" href="images/photo-gallery-18.jpg" data-lightbox="gallery"></a>
-				</div>
-			</div>
-
-			<!-- - -->
-			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom interior">
-				<img src="images/photo-gallery-19.jpg" alt="IMG-GALLERY">
-
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-search" href="images/photo-gallery-19.jpg" data-lightbox="gallery"></a>
-				</div>
-			</div>
-
-			<!-- - -->
-			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom interior">
-				<img src="images/photo-gallery-20.jpg" alt="IMG-GALLERY">
-
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-search" href="images/photo-gallery-20.jpg" data-lightbox="gallery"></a>
-				</div>
-			</div>
-
-			<!-- - -->
-			<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom events">
-				<img src="images/photo-gallery-21.jpg" alt="IMG-GALLERY">
-
-				<div class="overlay-item-gallery trans-0-4 flex-c-m">
-					<a class="btn-show-gallery flex-c-m fa fa-search" href="images/photo-gallery-21.jpg" data-lightbox="gallery"></a>
-				</div>
-			</div>
+				<?php
+			}
+			?>
 		</div>
+
 
 		<div class="pagination flex-c-m flex-w p-l-15 p-r-15 m-t-24 m-b-50">
 			<a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
@@ -438,55 +455,34 @@ else if (isset($_REQUEST['logout']) === true){
 						Gallery
 					</h4>
 
-					<!-- Gallery footer -->
 					<div class="wrap-gallery-footer flex-w">
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
-						</a>
+						<?php
+						$imagePaths = array(
+							"images/photo-gallery-01.jpg",
+							"images/photo-gallery-02.jpg",
+							"images/photo-gallery-03.jpg",
+							"images/photo-gallery-04.jpg",
+							"images/photo-gallery-05.jpg",
+							"images/photo-gallery-06.jpg",
+							"images/photo-gallery-07.jpg",
+							"images/photo-gallery-08.jpg",
+							"images/photo-gallery-09.jpg",
+							"images/photo-gallery-10.jpg",
+							"images/photo-gallery-11.jpg",
+							"images/photo-gallery-12.jpg"
+						);
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
+						foreach ($imagePaths as $index => $imagePath) {
+							$thumbnailPath = "images/photo-gallery-thumb-" . sprintf("%02d", $index + 1) . ".jpg";
+							$lightboxData = "gallery-footer";
+							$altText = "GALLERY";
+						?>
+						<a class="item-gallery-footer wrap-pic-w" href="<?php echo $imagePath; ?>" data-lightbox="<?php echo $lightboxData; ?>">
+							<img src="<?php echo $thumbnailPath; ?>" alt="<?php echo $altText; ?>">
 						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-04.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-04.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-08.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-08.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-12.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-12.jpg" alt="GALLERY">
-						</a>
+						<?php
+						}
+						?>
 					</div>
 
 				</div>
