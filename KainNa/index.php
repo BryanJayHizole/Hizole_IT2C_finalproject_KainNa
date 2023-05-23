@@ -41,7 +41,7 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">
+						<a href="index.php">
 							<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
 						</a>
 					</div>
@@ -51,31 +51,31 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="index.html">Home</a>
+									<a href="index.php">Home</a>
 								</li>
 
 								<li>
-									<a href="menu.html">Menu</a>
+									<a href="menu.php">Menu</a>
 								</li>
 
 								<li>
-									<a href="reservation.html">Reservation</a>
+									<a href="reservation.php">Reservation</a>
 								</li>
 
 								<li>
-									<a href="gallery.html">Gallery</a>
+									<a href="gallery.php">Gallery</a>
 								</li>
 
 								<li>
-									<a href="about.html">About</a>
+									<a href="about.php">About</a>
 								</li>
 
 								<li>
-									<a href="blog.html">Blog</a>
+									<a href="blog.php">Blog</a>
 								</li>
 
 								<li>
-									<a href="contact.html">Contact</a>
+									<a href="contact.php">Contact</a>
 								</li>
 							</ul>
 						</nav>
@@ -102,32 +102,32 @@
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="index.html" class="txt19">Home</a>
+				<a href="index.php" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="menu.html" class="txt19">Menu</a>
+				<a href="menu.php" class="txt19">Menu</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="gallery.html" class="txt19">Gallery</a>
+				<a href="gallery.php" class="txt19">Gallery</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="about.html" class="txt19">About</a>
+				<a href="about.php" class="txt19">About</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="blog.html" class="txt19">Blog</a>
+				<a href="blog.php" class="txt19">Blog</a>
 			</li>
 
 			<li class="t-center m-b-33">
-				<a href="contact.html" class="txt19">Contact</a>
+				<a href="contact.php" class="txt19">Contact</a>
 			</li>
 
 			<li class="t-center">
 				<!-- Button3 -->
-				<a href="reservation.html" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+				<a href="reservation.php" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
 					Reservation
 				</a>
 			</li>
@@ -197,7 +197,7 @@
 
 						<div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
 							<!-- Button1 -->
-							<a href="menu.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
+							<a href="menu.php" class="btn1 flex-c-m size1 txt3 trans-0-4">
 								Look Menu
 							</a>
 						</div>
@@ -216,7 +216,7 @@
 
 						<div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
 							<!-- Button1 -->
-							<a href="menu.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
+							<a href="menu.php" class="btn1 flex-c-m size1 txt3 trans-0-4">
 								Look Menu
 							</a>
 						</div>
@@ -235,7 +235,7 @@
 
 						<div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
 							<!-- Button1 -->
-							<a href="menu.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
+							<a href="menu.php" class="btn1 flex-c-m size1 txt3 trans-0-4">
 								Look Menu
 							</a>
 						</div>
@@ -266,7 +266,7 @@
 							Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
 						</p>
 
-						<a href="about.html" class="txt4">
+						<a href="about.php" class="txt4">
 							Our Story
 							<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 						</a>
@@ -1019,7 +1019,7 @@
 					<!-- Block1 -->
 					<div class="blo1">
 						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
-							<a href="blog-detail.html"><img src="images/blog-01.jpg" alt="IMG-INTRO"></a>
+							<a href="blog-detail.php"><img src="images/blog-01.jpg" alt="IMG-INTRO"></a>
 
 							<div class="time-blog">
 								21 Dec 2017
@@ -1027,7 +1027,7 @@
 						</div>
 
 						<div class="wrap-text-blo1 p-t-35">
-							<a href="blog-detail.html"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+							<a href="blog-detail.php"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 								Best Places for Wine
 							</h4></a>
 
@@ -1035,7 +1035,7 @@
 								Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
 							</p>
 
-							<a href="blog-detail.html" class="txt4">
+							<a href="blog-detail.php" class="txt4">
 								Continue Reading
 								<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 							</a>
@@ -1047,7 +1047,7 @@
 					<!-- Block1 -->
 					<div class="blo1">
 						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
-							<a href="blog-detail.html"><img src="images/blog-02.jpg" alt="IMG-INTRO"></a>
+							<a href="blog-detail.php"><img src="images/blog-02.jpg" alt="IMG-INTRO"></a>
 
 							<div class="time-blog">
 								15 Dec 2017
@@ -1055,7 +1055,7 @@
 						</div>
 
 						<div class="wrap-text-blo1 p-t-35">
-							<a href="blog-detail.html"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+							<a href="blog-detail.php"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 								Eggs and Cheese
 							</h4></a>
 
@@ -1063,7 +1063,7 @@
 								Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat
 							</p>
 
-							<a href="blog-detail.html" class="txt4">
+							<a href="blog-detail.php" class="txt4">
 								Continue Reading
 								<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 							</a>
@@ -1075,7 +1075,7 @@
 					<!-- Block1 -->
 					<div class="blo1">
 						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
-							<a href="blog-detail.html"><img src="images/blog-03.jpg" alt="IMG-INTRO"></a>
+							<a href="blog-detail.php"><img src="images/blog-03.jpg" alt="IMG-INTRO"></a>
 
 							<div class="time-blog">
 								12 Dec 2017
@@ -1083,7 +1083,7 @@
 						</div>
 
 						<div class="wrap-text-blo1 p-t-35">
-							<a href="blog-detail.html"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+							<a href="blog-detail.php"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
 								Style the Wedding Party
 							</h4></a>
 
@@ -1091,7 +1091,7 @@
 								Sed ornare ligula eget tortor tempor, quis porta tellus dictum.
 							</p>
 
-							<a href="blog-detail.html" class="txt4">
+							<a href="blog-detail.php" class="txt4">
 								Continue Reading
 								<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 							</a>

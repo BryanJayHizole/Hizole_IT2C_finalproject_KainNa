@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>About Us</title>
+	<title>Blog Detail</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -43,7 +43,7 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">
+						<a href="index.php">
 							<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
 						</a>
 					</div>
@@ -53,31 +53,31 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="index.html">Home</a>
+									<a href="index.php">Home</a>
 								</li>
 
 								<li>
-									<a href="menu.html">Menu</a>
+									<a href="menu.php">Menu</a>
 								</li>
 
 								<li>
-									<a href="reservation.html">Reservation</a>
+									<a href="reservation.php">Reservation</a>
 								</li>
 
 								<li>
-									<a href="gallery.html">Gallery</a>
+									<a href="gallery.php">Gallery</a>
 								</li>
 
 								<li>
-									<a href="about.html">About</a>
+									<a href="about.php">About</a>
 								</li>
 
 								<li>
-									<a href="blog.html">Blog</a>
+									<a href="blog.php">Blog</a>
 								</li>
 
 								<li>
-									<a href="contact.html">Contact</a>
+									<a href="contact.php">Contact</a>
 								</li>
 							</ul>
 						</nav>
@@ -104,32 +104,32 @@
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="index.html" class="txt19">Home</a>
+				<a href="index.php" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="menu.html" class="txt19">Menu</a>
+				<a href="menu.php" class="txt19">Menu</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="gallery.html" class="txt19">Gallery</a>
+				<a href="gallery.php" class="txt19">Gallery</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="about.html" class="txt19">About</a>
+				<a href="about.php" class="txt19">About</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="blog.html" class="txt19">Blog</a>
+				<a href="blog.php" class="txt19">Blog</a>
 			</li>
 
 			<li class="t-center m-b-33">
-				<a href="contact.html" class="txt19">Contact</a>
+				<a href="contact.php" class="txt19">Contact</a>
 			</li>
 
 			<li class="t-center">
 				<!-- Button3 -->
-				<a href="reservation.html" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+				<a href="reservation.php" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
 					Reservation
 				</a>
 			</li>
@@ -187,213 +187,362 @@
 	<!-- Title Page -->
 	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/bg-title-page-03.jpg);">
 		<h2 class="tit6 t-center">
-			About Us
+			Blog
 		</h2>
 	</section>
 
 
-	<!-- Our Story -->
-	<section class="bg2-pattern p-t-116 p-b-110 t-center p-l-15 p-r-15">
-		<span class="tit2 t-center">
-			Italian Restaurant
-		</span>
+	<!-- Content page -->
+	<section>
+		<div class="bread-crumb bo5-b p-t-17 p-b-17">
+			<div class="container">
+				<a href="index.php" class="txt27">
+					Home
+				</a>
 
-		<h3 class="tit3 t-center m-b-35 m-t-5">
-			Our Story
-		</h3>
+				<span class="txt29 m-l-10 m-r-10">/</span>
 
-		<p class="t-center size32 m-l-r-auto">
-			Fusce at risus eget mi auctor pulvinar. Suspendisse maximus venenatis pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam purus purus, lacinia a scelerisque in, luctus vel felis. Donec odio diam, dignissim a efficitur at, efficitur et est. Pellentesque semper est ut pulvinar ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla et leo accumsan, egestas velit ac, fringilla tortor. Sed varius justo sed luctus mattis.
-		</p>
-	</section>
+				<a href="blog.php" class="txt27">
+					Blog
+				</a>
 
+				<span class="txt29 m-l-10 m-r-10">/</span>
 
-	<!-- Video -->
-	<section class="section-video parallax100" style="background-image: url(images/header-menu-01.jpg);">
-		<div class="content-video t-center p-t-225 p-b-250">
-			<span class="tit2 p-l-15 p-r-15">
-				Discover
-			</span>
-
-			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
-				Our Video
-			</h3>
-
-			<div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal" data-target="#modal-video-01">
-				<div class="flex-c-m sizefull bo-cir bgwhite color1 hov1 trans-0-4">
-					<i class="fa fa-play fs-18 m-l-2" aria-hidden="true"></i>
-				</div>
+				<span class="txt29">
+					Cooking recipe delicious
+				</span>
 			</div>
 		</div>
-	</section>
 
-
-	<!-- Delicious & Romantic-->
-	<section class="bg1-pattern p-t-120 p-b-105">
 		<div class="container">
-			<!-- Delicious -->
-			<div class="row">
-				<div class="col-md-6 p-t-45 p-b-30">
-					<div class="wrap-text-delicious t-center">
-						<span class="tit2 t-center">
-							Delicious
-						</span>
+			<div class="row ">
+				<div class="col-md-8 col-lg-9">
+					<div class="p-t-80 p-b-124 bo5-r p-r-50 h-full p-r-0-md bo-none-md">
+						<!-- Block4 -->
+						<div class="blo4 p-b-63">
+							<!-- - -->
+							<div class="pic-blo4 hov-img-zoom bo-rad-10 pos-relative">
+								<a href="blog-detail.php">
+									<img src="images/blog-05.jpg" alt="IMG-BLOG">
+								</a>
 
-						<h3 class="tit3 t-center m-b-35 m-t-5">
-							RECIPES
-						</h3>
+								<div class="date-blo4 flex-col-c-m">
+									<span class="txt30 m-b-4">
+										28
+									</span>
 
-						<p class="t-center m-b-22 size3 m-l-r-auto">
-							Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
-						</p>
+									<span class="txt31">
+										Dec, 2018
+									</span>
+								</div>
+							</div>
+
+							<!-- - -->
+							<div class="text-blo4 p-t-33">
+								<h4 class="p-b-16">
+									<a href="blog-detail.php" class="tit9">Cooking recipe Delicious</a>
+								</h4>
+
+								<div class="txt32 flex-w p-b-24">
+									<span>
+										by Admin
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										28 December, 2018
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										Cooking, Food
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										8 Comments
+									</span>
+								</div>
+
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget mi sem. Nulla facilisi. Sed ultricies eros a nibh tempus, in sodales mi vestibulum. Nullam quis dui ac nisl ultrices euismod et sit amet urna. Morbi semper sapien quis ex tempor, sit amet scelerisque eros rhoncus. Cras scelerisque auctor gravida. Nunc fermentum luctus rhoncus. Nulla vulputate fermentum convallis. In quis pellentesque tortor. Cras metus nibh, gravida vitae ante vel, finibus semper tellus. Nulla vel tincidunt magna. Morbi tempor velit lectus, eu commodo quam volutpat vitae.
+								</p>
+							</div>
+						</div>
+
+						<!-- Leave a comment -->
+						<form class="leave-comment p-t-10">
+							<h4 class="txt33 p-b-14">
+								Leave a Comment
+							</h4>
+
+							<p>
+								Your email address will not be published. Required fields are marked *
+							</p>
+
+							<textarea class="bo-rad-10 size29 bo2 txt10 p-l-20 p-t-15 m-b-10 m-t-40" name="commentent" placeholder="Comment..."></textarea>
+
+							<div class="size30 bo2 bo-rad-10 m-t-3 m-b-20">
+								<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name" placeholder="Name *">
+							</div>
+
+							<div class="size30 bo2 bo-rad-10 m-t-3 m-b-20">
+								<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email *">
+							</div>
+
+							<div class="size30 bo2 bo-rad-10 m-t-3 m-b-30">
+								<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="website" placeholder="Website">
+							</div>
+
+							<!-- Button3 -->
+							<button type="submit" class="btn3 flex-c-m size31 txt11 trans-0-4">
+								Post Comment
+							</button>
+						</form>
 					</div>
 				</div>
 
-				<div class="col-md-6 p-b-30">
-					<div class="wrap-pic-delicious size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-						<img src="images/our-story-01.jpg" alt="IMG-OUR">
-					</div>
-				</div>
-			</div>
+				<div class="col-md-4 col-lg-3">
+					<div class="sidebar2 p-t-80 p-b-80 p-l-20 p-l-0-md p-t-0-md">
+						<!-- Search -->
+						<div class="search-sidebar2 size12 bo2 pos-relative">
+							<input class="input-search-sidebar2 txt10 p-l-20 p-r-55" type="text" name="search" placeholder="Search">
+							<button class="btn-search-sidebar2 flex-c-m ti-search trans-0-4"></button>
+						</div>
+
+						<!-- Categories -->
+						<div class="categories">
+							<h4 class="txt33 bo5-b p-b-35 p-t-58">
+								Categories
+							</h4>
+
+							<ul>
+								<li class="bo5-b p-t-8 p-b-8">
+									<a href="#" class="txt27">
+										Cooking recipe
+									</a>
+								</li>
+
+								<li class="bo5-b p-t-8 p-b-8">
+									<a href="#" class="txt27">
+										Delicious foods
+									</a>
+								</li>
+
+								<li class="bo5-b p-t-8 p-b-8">
+									<a href="#" class="txt27">
+										Events Design
+									</a>
+								</li>
+
+								<li class="bo5-b p-t-8 p-b-8">
+									<a href="#" class="txt27">
+										Restaurant Place
+									</a>
+								</li>
+
+								<li class="bo5-b p-t-8 p-b-8">
+									<a href="#" class="txt27">
+										WordPress
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Most Popular -->
+						<div class="popular">
+							<h4 class="txt33 p-b-35 p-t-58">
+								Most popular
+							</h4>
+
+							<ul>
+								<li class="flex-w m-b-25">
+									<div class="size16 bo-rad-10 wrap-pic-w of-hidden m-r-18">
+										<a href="#">
+											<img src="images/blog-11.jpg" alt="IMG-BLOG">
+										</a>
+									</div>
+
+									<div class="size28">
+										<a href="#" class="dis-block txt28 m-b-8">
+											Best Places for Wine
+										</a>
+
+										<span class="txt14">
+											3 days ago
+										</span>
+									</div>
+								</li>
+
+								<li class="flex-w m-b-25">
+									<div class="size16 bo-rad-10 wrap-pic-w of-hidden m-r-18">
+										<a href="#">
+											<img src="images/blog-12.jpg" alt="IMG-BLOG">
+										</a>
+									</div>
+
+									<div class="size28">
+										<a href="#" class="dis-block txt28 m-b-8">
+											Eggs and Cheese
+										</a>
+
+										<span class="txt14">
+											July 2, 2017
+										</span>
+									</div>
+								</li>
+
+								<li class="flex-w m-b-25">
+									<div class="size16 bo-rad-10 wrap-pic-w of-hidden m-r-18">
+										<a href="#">
+											<img src="images/blog-13.jpg" alt="IMG-BLOG">
+										</a>
+									</div>
+
+									<div class="size28">
+										<a href="#" class="dis-block txt28 m-b-8">
+											Style the Wedding Party
+										</a>
+
+										<span class="txt14">
+											May 28, 2017
+										</span>
+									</div>
+								</li>
+
+								<li class="flex-w m-b-25">
+									<div class="size16 bo-rad-10 wrap-pic-w of-hidden m-r-18">
+										<a href="#">
+											<img src="images/blog-14.jpg" alt="IMG-BLOG">
+										</a>
+									</div>
+
+									<div class="size28">
+										<a href="#" class="dis-block txt28 m-b-8">
+											Cooking recipe Delicious
+										</a>
+
+										<span class="txt14">
+											May 25, 2017
+										</span>
+									</div>
+								</li>
+
+								<li class="flex-w m-b-25">
+									<div class="size16 bo-rad-10 wrap-pic-w of-hidden m-r-18">
+										<a href="#">
+											<img src="images/blog-15.jpg" alt="IMG-BLOG">
+										</a>
+									</div>
+
+									<div class="size28">
+										<a href="#" class="dis-block txt28 m-b-8">
+											Pizza is prepared fresh
+										</a>
+
+										<span class="txt14">
+											May 2, 2017
+										</span>
+									</div>
+								</li>
+							</ul>
+						</div>
 
 
-			<!-- Romantic -->
-			<div class="row p-t-170">
-				<div class="col-md-6 p-b-30">
-					<div class="wrap-pic-romantic size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-						<img src="images/our-story-02.jpg" alt="IMG-OUR">
-					</div>
-				</div>
+						<!-- Archive -->
+						<div class="archive">
+							<h4 class="txt33 p-b-20 p-t-43">
+								Archive
+							</h4>
 
-				<div class="col-md-6 p-t-45 p-b-30">
-					<div class="wrap-text-romantic t-center">
-						<span class="tit2 t-center">
-							Romantic
-						</span>
+							<ul>
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt27">
+										uly 2018
+									</a>
 
-						<h3 class="tit3 t-center m-b-35 m-t-5">
-							Restaurant
-						</h3>
+									<span class="txt29">
+										(9)
+									</span>
+								</li>
 
-						<p class="t-center m-b-22 size3 m-l-r-auto">
-							Fusce iaculis, quam quis volutpat cursus, tellus quam varius eros, in euismod lorem nisl in ante. Maecenas imperdiet vulputate dui sit amet vestibulum. Nulla quis suscipit nisl.
-						</p>
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt27">
+										June 2018
+									</a>
+
+									<span class="txt29">
+										(39)
+									</span>
+								</li>
+
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt27">
+										May 2018
+									</a>
+
+									<span class="txt29">
+										(29)
+									</span>
+								</li>
+
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt27">
+										April  2018
+									</a>
+
+									<span class="txt29">
+										(35)
+									</span>
+								</li>
+
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt27">
+										March 2018
+									</a>
+
+									<span class="txt29">
+										(22)
+									</span>
+								</li>
+
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt27">
+										February 2018
+									</a>
+
+									<span class="txt29">
+										(32)
+									</span>
+								</li>
+
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt27">
+										January 2018
+									</a>
+
+									<span class="txt29">
+										(21)
+									</span>
+								</li>
+
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt27">
+										December 2017
+									</a>
+
+									<span class="txt29">
+										(26)
+									</span>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-
-	<!-- Banner -->
-	<div class="parallax0 parallax100" style="background-image: url(images/bg-cover-video-02.jpg);">
-		<div class="overlay0-parallax t-center size33"></div>
-	</div>
-
-
-	<!-- Chef -->
-	<section class="section-chef bgwhite p-t-115 p-b-95">
-		<div class="container t-center">
-			<span class="tit2 t-center">
-				Meet Our
-			</span>
-
-			<h3 class="tit5 t-center m-b-50 m-t-5">
-				Chef
-			</h3>
-
-			<div class="row">
-				<div class="col-md-8 col-lg-4 m-l-r-auto p-b-30">
-					<!-- -Block5 -->
-					<div class="blo5 pos-relative p-t-60">
-						<div class="pic-blo5 size14 bo4 wrap-cir-pic hov-img-zoom ab-c-t">
-							<a href="#"><img src="images/avatar-02.jpg" alt="IGM-AVATAR"></a>
-						</div>
-
-						<div class="text-blo5 size34 t-center bo-rad-10 bo7 p-t-90 p-l-35 p-r-35 p-b-30">
-							<a href="#" class="txt34 dis-block p-b-6">
-								Peter Hart
-							</a>
-
-							<span class="dis-block t-center txt35 p-b-25">
-								Chef
-							</span>
-
-							<p class="t-center">
-								Donec porta eleifend mauris ut effici-tur. Quisque non velit vestibulum, lob-ortis mi eget, rhoncus nunc
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-8 col-lg-4 m-l-r-auto p-b-30">
-					<!-- -Block5 -->
-					<div class="blo5 pos-relative p-t-60">
-						<div class="pic-blo5 size14 bo4 wrap-cir-pic hov-img-zoom ab-c-t">
-							<a href="#"><img src="images/avatar-03.jpg" alt="IGM-AVATAR"></a>
-						</div>
-
-						<div class="text-blo5 size34 t-center bo-rad-10 bo7 p-t-90 p-l-35 p-r-35 p-b-30">
-							<a href="#" class="txt34 dis-block p-b-6">
-								Joyce Bowman
-							</a>
-
-							<span class="dis-block t-center txt35 p-b-25">
-								Chef
-							</span>
-
-							<p class="t-center">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies felis a sem tempus tempus.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-8 col-lg-4 m-l-r-auto p-b-30">
-					<!-- -Block5 -->
-					<div class="blo5 pos-relative p-t-60">
-						<div class="pic-blo5 size14 bo4 wrap-cir-pic hov-img-zoom ab-c-t">
-							<a href="#"><img src="images/avatar-05.jpg" alt="IGM-AVATAR"></a>
-						</div>
-
-						<div class="text-blo5 size34 t-center bo-rad-10 bo7 p-t-90 p-l-35 p-r-35 p-b-30">
-							<a href="#" class="txt34 dis-block p-b-6">
-								Peter Hart
-							</a>
-
-							<span class="dis-block t-center txt35 p-b-25">
-								Chef
-							</span>
-
-							<p class="t-center">
-								Phasellus aliquam libero a nisi varius, vitae placerat sem aliquet. Ut at velit nec ipsum iaculis posuere quis in sapien
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!-- Sign up -->
-	<div class="section-signup bg1-pattern p-t-85 p-b-85">
-		<form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
-			<span class="txt5 m-10">
-				Specials Sign up
-			</span>
-
-			<div class="wrap-input-signup size17 bo2 bo-rad-10 bgwhite pos-relative txt10 m-10">
-				<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email-address" placeholder="Email Adrress">
-				<i class="fa fa-envelope ab-r-m m-r-18" aria-hidden="true"></i>
-			</div>
-
-			<!-- Button3 -->
-			<button type="submit" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">
-				Sign-up
-			</button>
-		</form>
-	</div>
 
 	<!-- Footer -->
 	<footer class="bg1">
@@ -571,20 +720,7 @@
 		</span>
 	</div>
 
-	<!-- Modal Video 01-->
-	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
 
-		<div class="modal-dialog" role="document" data-dismiss="modal">
-			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
-
-			<div class="wrap-video-mo-01">
-				<div class="w-full wrap-pic-w op-0-0"><img src="images/icons/video-16-9.jpg" alt="IMG"></div>
-				<div class="video-mo-01">
-					<iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
 
 <!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>

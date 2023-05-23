@@ -43,7 +43,7 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">
+						<a href="index.php">
 							<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
 						</a>
 					</div>
@@ -53,31 +53,31 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="index.html">Home</a>
+									<a href="index.php">Home</a>
 								</li>
 
 								<li>
-									<a href="menu.html">Menu</a>
+									<a href="menu.php">Menu</a>
 								</li>
 
 								<li>
-									<a href="reservation.html">Reservation</a>
+									<a href="reservation.php">Reservation</a>
 								</li>
 
 								<li>
-									<a href="gallery.html">Gallery</a>
+									<a href="gallery.php">Gallery</a>
 								</li>
 
 								<li>
-									<a href="about.html">About</a>
+									<a href="about.php">About</a>
 								</li>
 
 								<li>
-									<a href="blog.html">Blog</a>
+									<a href="blog.php">Blog</a>
 								</li>
 
 								<li>
-									<a href="contact.html">Contact</a>
+									<a href="contact.php">Contact</a>
 								</li>
 							</ul>
 						</nav>
@@ -104,32 +104,32 @@
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="index.html" class="txt19">Home</a>
+				<a href="index.php" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="menu.html" class="txt19">Menu</a>
+				<a href="menu.php" class="txt19">Menu</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="gallery.html" class="txt19">Gallery</a>
+				<a href="gallery.php" class="txt19">Gallery</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="about.html" class="txt19">About</a>
+				<a href="about.php" class="txt19">About</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="blog.html" class="txt19">Blog</a>
+				<a href="blog.php" class="txt19">Blog</a>
 			</li>
 
 			<li class="t-center m-b-33">
-				<a href="contact.html" class="txt19">Contact</a>
+				<a href="contact.php" class="txt19">Contact</a>
 			</li>
 
 			<li class="t-center">
 				<!-- Button3 -->
-				<a href="reservation.html" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+				<a href="reservation.php" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
 					Reservation
 				</a>
 			</li>
