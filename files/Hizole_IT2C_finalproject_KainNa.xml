@@ -42,10 +42,5 @@
     <name>Sisig</name>
     <price>P110</price>
   </specialties>
-  <starters>
-    <code>A2</code>
-    <category>Starters</category>
-    <name>Salad</name>
-    <price>50</price>
-  </starters>
+  
 </menu>

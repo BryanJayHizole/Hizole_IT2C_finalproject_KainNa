@@ -1,0 +1,53 @@
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+  
+.menus {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+  
+.menu-img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+  
+.text {
+    margin-left: 20px;
+}
+  
+  /* Styling for the menu item details */
+.one-half {
+    flex: 1;
+}
+
+.one-forth {
+    flex: 0 0 25%;
+    text-align: right;
+}
+  
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+  
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+  /* Custom styling for specific menu items */
+.menu-img:nth-child(1) {
+    background-image: url(images/bf4.jpg);
+}
+  
+.menu-img:nth-child(2) {
+    background-image: url(images/bf4.jpg);
+}
