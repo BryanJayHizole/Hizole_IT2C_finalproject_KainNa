@@ -25,7 +25,7 @@ if(isset($_REQUEST['publishStarters'])){
 	$dom->save('files/Hizole_IT2C_finalproject_KainNa.xml');
 
 	//send a message to index
-	$_SESSION['message'] = "Blog Successfully Posted";
+	$_SESSION['message'] = "Menu Successfully Posted";
 	header("location: index.php");
 
 } else {
@@ -58,7 +58,7 @@ if(isset($_REQUEST['publishLunch'])){
 	$dom->save('files/Hizole_IT2C_finalproject_KainNa.xml');
 
 	//send a message to index
-	$_SESSION['message'] = "Blog Successfully Posted";
+	$_SESSION['message'] = "Menu Successfully Posted";
 	header("location: index.php");
 
 } else {
@@ -91,7 +91,7 @@ if(isset($_REQUEST['publishDinner'])){
 	$dom->save('files/Hizole_IT2C_finalproject_KainNa.xml');
 
 	//send a message to index
-	$_SESSION['message'] = "Blog Successfully Posted";
+	$_SESSION['message'] = "Menu Successfully Posted";
 	header("location: index.php");
 
 } else {
@@ -124,7 +124,7 @@ if(isset($_REQUEST['publishDessert'])){
 	$dom->save('files/Hizole_IT2C_finalproject_KainNa.xml');
 
 	//send a message to index
-	$_SESSION['message'] = "Blog Successfully Posted";
+	$_SESSION['message'] = "Menu Successfully Posted";
 	header("location: index.php");
 
 } else {
@@ -157,7 +157,7 @@ if(isset($_REQUEST['publishDrinks'])){
 	$dom->save('files/Hizole_IT2C_finalproject_KainNa.xml');
 
 	//send a message to index
-	$_SESSION['message'] = "Blog Successfully Posted";
+	$_SESSION['message'] = "Menu Successfully Posted";
 	header("location: index.php");
 
 } else {
@@ -190,7 +190,7 @@ if(isset($_REQUEST['publishWine'])){
 	$dom->save('files/Hizole_IT2C_finalproject_KainNa.xml');
 
 	//send a message to index
-	$_SESSION['message'] = "Blog Successfully Posted";
+	$_SESSION['message'] = "Menu Successfully Posted";
 	header("location: index.php");
 
 } else {
@@ -223,7 +223,7 @@ if(isset($_REQUEST['publishSpecialties'])){
 	$dom->save('files/Hizole_IT2C_finalproject_KainNa.xml');
 
 	//send a message to index
-	$_SESSION['message'] = "Blog Successfully Posted";
+	$_SESSION['message'] = "Menu Successfully Posted";
 	header("location: index.php");
 
 } else {

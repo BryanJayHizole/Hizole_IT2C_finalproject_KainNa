@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <menu>
     <starters>
         <code>A1</code>
         <category>Starters</category>
         <name>Smoked Salmon</name>
-        <price>P150</price>
+        <price>P250</price>
     </starters>
     <lunch>
         <code>B1</code>

@@ -10,7 +10,7 @@
             <div class="modal-body">
 			<div class="container-fluid">
 
-            <form amethod="POST" action="add_blog.php">
+            <form amethod="POST" action="add_menu.php">
                 <div class="row form-group">
                     <div class="col-sm-2">
                         <label class="control-label" style="position:relative; top:7px;">Starters Code:</label>
@@ -76,7 +76,7 @@
             <div class="modal-body">
 			<div class="container-fluid">
 
-            <form amethod="POST" action="add_blog.php">
+            <form amethod="POST" action="add_menu.php">
                 <div class="row form-group">
                     <div class="col-sm-2">
                         <label class="control-label" style="position:relative; top:7px;">Lunch Code:</label>
@@ -142,7 +142,7 @@
             <div class="modal-body">
 			<div class="container-fluid">
 
-            <form amethod="POST" action="add_blog.php">
+            <form amethod="POST" action="add_menu.php">
                 <div class="row form-group">
                     <div class="col-sm-2">
                         <label class="control-label" style="position:relative; top:7px;">Dinner Code:</label>
@@ -208,7 +208,7 @@
             <div class="modal-body">
 			<div class="container-fluid">
 
-            <form amethod="POST" action="add_blog.php">
+            <form amethod="POST" action="add_menu.php">
                 <div class="row form-group">
                     <div class="col-sm-2">
                         <label class="control-label" style="position:relative; top:7px;">Dessert Code:</label>
@@ -274,7 +274,7 @@
             <div class="modal-body">
 			<div class="container-fluid">
 
-            <form amethod="POST" action="add_blog.php">
+            <form amethod="POST" action="add_menu.php">
                 <div class="row form-group">
                     <div class="col-sm-2">
                         <label class="control-label" style="position:relative; top:7px;">Drinks Code:</label>
@@ -340,7 +340,7 @@
             <div class="modal-body">
 			<div class="container-fluid">
 
-            <form amethod="POST" action="add_blog.php">
+            <form amethod="POST" action="add_menu.php">
                 <div class="row form-group">
                     <div class="col-sm-2">
                         <label class="control-label" style="position:relative; top:7px;">Wine Code:</label>
@@ -406,7 +406,7 @@
             <div class="modal-body">
 			<div class="container-fluid">
 
-            <form amethod="POST" action="add_blog.php">
+            <form amethod="POST" action="add_menu.php">
                 <div class="row form-group">
                     <div class="col-sm-2">
                         <label class="control-label" style="position:relative; top:7px;">Specialties Code:</label>
