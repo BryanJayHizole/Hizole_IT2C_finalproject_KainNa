@@ -255,7 +255,21 @@ else if (isset($_REQUEST['logout']) === true){
 						</h3>
 					</div>
 
-					<form class="wrap-form-reservation size22 m-l-r-auto">
+					<?php
+					if ($_SERVER["REQUEST_METHOD"] === "POST") {
+						// Retrieve form data
+						$date = $_POST["date"];
+						$time = $_POST["time"];
+						$people = $_POST["people"];
+						$name = $_POST["name"];
+						$phone = $_POST["phone"];
+						$email = $_POST["email"];
+
+						
+					}
+					?>
+
+					<form class="wrap-form-reservation size22 m-l-r-auto" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 						<div class="row">
 							<div class="col-md-4">
 								<!-- Date -->
@@ -360,7 +374,6 @@ else if (isset($_REQUEST['logout']) === true){
 									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
 								</div>
 							</div>
-
 						</div>
 
 						<div class="wrap-btn-booking flex-c-m m-t-6">
