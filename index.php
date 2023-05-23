@@ -1,3 +1,8 @@
+<?php
+
+include "add_modal.php";
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -6,479 +11,490 @@
         <title>Menu Management</title>
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     </head>
-</html>
-<body>
-    <div class="container">
-        <h1 class="page-header text-center"> Menu Management</h1>
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-            
-            <a href="#addStarters" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Starters</a>
 
-            <a href="KainNa/home.php" class="btn btn-light" target="_blank"> View Website</a>  \
+    <body>
+        <div class="container">
+            <h1 class="page-header text-center"> Menu Management</h1>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                
+                <a href="#addStarters" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Starters</a>
 
-            <!---Starters-->
-            
-            <?php 
+                <a href="KainNa/home.php" class="btn btn-light" target="_blank"> View Website</a>  \
 
-            if(isset($_SESSION['message'])){
+                <!---Starters-->
+                
+                <?php 
 
-            
-            ?>
+                if(isset($_SESSION['message'])){
 
-            <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
-                <?php echo $_SESSION['message'] ?>
-            </div>
-            
-            <?php 
-                unset($_SESSION['message']);
-            }
-            ?>
+                
+                ?>
 
-            <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
-                <thead class="table-dark">
-                    <th scope="col">Dish Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </thead>
+                <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
+                    <?php echo $_SESSION['message'] ?>
+                </div>
+                
+                <?php 
+                    unset($_SESSION['message']);
+                }
+                ?>
 
-                <tbody>
+                <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
+                    <thead class="table-dark">
+                        <th scope="col">Dish Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </thead>
+
+                    <tbody>
+
+                    <?php 
+
+                        $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
+
+                        foreach($file->starters as $rows) {
+                        ?>
+
+                            <tr>
+                                <td><?php echo $rows->code; ?></td>
+                                <td><?php echo $rows->category; ?></td>
+                                <td><?php echo $rows->name; ?></td>
+                                <td><?php echo $rows->price; ?></td>
+
+                                <td>
+                                    <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
+                                        
+                                    <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+                                </td>
+                            <?php include "edit_delete_modal.php"; ?>
+                            
+                            </tr>
+                        <?php 
+                        }//closing bracket of foreach
+                        ?>
+                    </tbody>
+                    
+                    <tfoot>
+                        <th scope="col">Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </tfoot>
+
+                </table>
+
+                <!---Lunch-->
+                <a href="#addLunch" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Lunch</a>
 
                 <?php 
 
-                    $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
+                if(isset($_SESSION['message'])){
 
-                    foreach($file->starters as $rows) {
-                    ?>
-
-                        <tr>
-                            <td><?php echo $rows->code; ?></td>
-                            <td><?php echo $rows->category; ?></td>
-                            <td><?php echo $rows->name; ?></td>
-                            <td><?php echo $rows->price; ?></td>
-
-                            <td>
-                                <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
-                                    
-                                <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
-                            </td>
-
-                        
-                        </tr>
-                    <?php 
-                    }//closing bracket of foreach
-                    ?>
-                </tbody>
                 
-                <tfoot>
-                    <th scope="col">Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </tfoot>
+                ?>
 
-            </table>
+                <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
+                    <?php echo $_SESSION['message'] ?>
+                </div>
+                
+                <?php 
+                    unset($_SESSION['message']);
+                }
+                ?>
 
-            <!---Lunch-->
-            <a href="#addLunch" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Lunch</a>
+                <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
+                    <thead class="table-dark">
+                        <th scope="col">Dish Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </thead>
 
-            <?php 
+                    <tbody>
 
-            if(isset($_SESSION['message'])){
+                    <?php 
 
-            
-            ?>
+                        $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
 
-            <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
-                <?php echo $_SESSION['message'] ?>
-            </div>
-            
-            <?php 
-                unset($_SESSION['message']);
-            }
-            ?>
+                        foreach($file->lunch as $rows) {
+                        ?>
 
-            <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
-                <thead class="table-dark">
-                    <th scope="col">Dish Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </thead>
+                            <tr>
+                                <td><?php echo $rows->code; ?></td>
+                                <td><?php echo $rows->category; ?></td>
+                                <td><?php echo $rows->name; ?></td>
+                                <td><?php echo $rows->price; ?></td>
 
-                <tbody>
+                                <td>
+                                    <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
+                                        
+                                    <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+                                </td>
+
+                            <?php include "edit_delete_modal.php"; ?>
+                            
+                            </tr>
+                        <?php 
+                        }//closing bracket of foreach
+                        ?>
+                    </tbody>
+                    
+                    <tfoot>
+                        <th scope="col">Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </tfoot>
+
+                </table>
+
+                <!---Dinner-->
+
+                <a href="#addDinner" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Dinner</a>
 
                 <?php 
 
-                    $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
+                if(isset($_SESSION['message'])){
 
-                    foreach($file->lunch as $rows) {
-                    ?>
-
-                        <tr>
-                            <td><?php echo $rows->code; ?></td>
-                            <td><?php echo $rows->category; ?></td>
-                            <td><?php echo $rows->name; ?></td>
-                            <td><?php echo $rows->price; ?></td>
-
-                            <td>
-                                <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
-                                    
-                                <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
-                            </td>
-
-                        
-                        </tr>
-                    <?php 
-                    }//closing bracket of foreach
-                    ?>
-                </tbody>
                 
-                <tfoot>
-                    <th scope="col">Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </tfoot>
+                ?>
 
-            </table>
+                <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
+                    <?php echo $_SESSION['message'] ?>
+                </div>
+                
+                <?php 
+                    unset($_SESSION['message']);
+                }
+                ?>
 
-            <!---Dinner-->
+                <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
+                    <thead class="table-dark">
+                        <th scope="col">Dish Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </thead>
 
-            <a href="#addDinner" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Dinner</a>
+                    <tbody>
 
-            <?php 
+                    <?php 
 
-            if(isset($_SESSION['message'])){
+                        $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
 
-            
-            ?>
+                        foreach($file->dinner as $rows) {
+                        ?>
 
-            <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
-                <?php echo $_SESSION['message'] ?>
-            </div>
-            
-            <?php 
-                unset($_SESSION['message']);
-            }
-            ?>
+                            <tr>
+                                <td><?php echo $rows->code; ?></td>
+                                <td><?php echo $rows->category; ?></td>
+                                <td><?php echo $rows->name; ?></td>
+                                <td><?php echo $rows->price; ?></td>
 
-            <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
-                <thead class="table-dark">
-                    <th scope="col">Dish Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </thead>
+                                <td>
+                                    <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
+                                        
+                                    <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+                                </td>
 
-                <tbody>
+                            <?php include "edit_delete_modal.php"; ?>
+                            
+                            </tr>
+                        <?php 
+                        }//closing bracket of foreach
+                        ?>
+                    </tbody>
+                    
+                    <tfoot>
+                        <th scope="col">Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </tfoot>
+
+                </table>
+
+                <!---Dessert-->
+                <a href="#addDessert" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Dessert</a>
 
                 <?php 
 
-                    $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
+                if(isset($_SESSION['message'])){
 
-                    foreach($file->dinner as $rows) {
-                    ?>
-
-                        <tr>
-                            <td><?php echo $rows->code; ?></td>
-                            <td><?php echo $rows->category; ?></td>
-                            <td><?php echo $rows->name; ?></td>
-                            <td><?php echo $rows->price; ?></td>
-
-                            <td>
-                                <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
-                                    
-                                <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
-                            </td>
-
-                        
-                        </tr>
-                    <?php 
-                    }//closing bracket of foreach
-                    ?>
-                </tbody>
                 
-                <tfoot>
-                    <th scope="col">Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </tfoot>
+                ?>
 
-            </table>
+                <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
+                    <?php echo $_SESSION['message'] ?>
+                </div>
+                
+                <?php 
+                    unset($_SESSION['message']);
+                }
+                ?>
 
-            <!---Desert-->
-            <a href="#addDesert" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Desert</a>
+                <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
+                    <thead class="table-dark">
+                        <th scope="col">Dish Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </thead>
 
-            <?php 
+                    <tbody>
 
-            if(isset($_SESSION['message'])){
+                    <?php 
 
-            
-            ?>
+                        $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
 
-            <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
-                <?php echo $_SESSION['message'] ?>
-            </div>
-            
-            <?php 
-                unset($_SESSION['message']);
-            }
-            ?>
+                        foreach($file->dessert as $rows) {
+                        ?>
 
-            <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
-                <thead class="table-dark">
-                    <th scope="col">Dish Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </thead>
+                            <tr>
+                                <td><?php echo $rows->code; ?></td>
+                                <td><?php echo $rows->category; ?></td>
+                                <td><?php echo $rows->name; ?></td>
+                                <td><?php echo $rows->price; ?></td>
 
-                <tbody>
+                                <td>
+                                    <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
+                                        
+                                    <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+                                </td>
+
+                            <?php include "edit_delete_modal.php"; ?>
+                            
+                            </tr>
+                        <?php 
+                        }//closing bracket of foreach
+                        ?>
+                    </tbody>
+                    
+                    <tfoot>
+                        <th scope="col">Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </tfoot>
+
+                </table>
+
+                <!---Drinks-->
+                <a href="#addDrinks" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Drinks</a>
 
                 <?php 
 
-                    $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
+                if(isset($_SESSION['message'])){
 
-                    foreach($file->desert as $rows) {
-                    ?>
-
-                        <tr>
-                            <td><?php echo $rows->code; ?></td>
-                            <td><?php echo $rows->category; ?></td>
-                            <td><?php echo $rows->name; ?></td>
-                            <td><?php echo $rows->price; ?></td>
-
-                            <td>
-                                <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
-                                    
-                                <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
-                            </td>
-
-                        
-                        </tr>
-                    <?php 
-                    }//closing bracket of foreach
-                    ?>
-                </tbody>
                 
-                <tfoot>
-                    <th scope="col">Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </tfoot>
+                ?>
 
-            </table>
+                <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
+                    <?php echo $_SESSION['message'] ?>
+                </div>
+                
+                <?php 
+                    unset($_SESSION['message']);
+                }
+                ?>
 
-            <!---Drinks-->
-            <a href="#addDrinks" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Drinks</a>
+                <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
+                    <thead class="table-dark">
+                        <th scope="col">Dish Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </thead>
 
-            <?php 
+                    <tbody>
 
-            if(isset($_SESSION['message'])){
+                    <?php 
 
-            
-            ?>
+                        $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
 
-            <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
-                <?php echo $_SESSION['message'] ?>
-            </div>
-            
-            <?php 
-                unset($_SESSION['message']);
-            }
-            ?>
+                        foreach($file->drinks as $rows) {
+                        ?>
 
-            <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
-                <thead class="table-dark">
-                    <th scope="col">Dish Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </thead>
+                            <tr>
+                                <td><?php echo $rows->code; ?></td>
+                                <td><?php echo $rows->category; ?></td>
+                                <td><?php echo $rows->name; ?></td>
+                                <td><?php echo $rows->price; ?></td>
 
-                <tbody>
+                                <td>
+                                    <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
+                                        
+                                    <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+                                </td>
+
+                            <?php include "edit_delete_modal.php"; ?>
+                            
+                            </tr>
+                        <?php 
+                        }//closing bracket of foreach
+                        ?>
+                    </tbody>
+                    
+                    <tfoot>
+                        <th scope="col">Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </tfoot>
+
+                </table>
+
+                <!---wine-->
+
+                <a href="#addWine" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Wine</a>
 
                 <?php 
 
-                    $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
+                if(isset($_SESSION['message'])){
 
-                    foreach($file->drinks as $rows) {
-                    ?>
-
-                        <tr>
-                            <td><?php echo $rows->code; ?></td>
-                            <td><?php echo $rows->category; ?></td>
-                            <td><?php echo $rows->name; ?></td>
-                            <td><?php echo $rows->price; ?></td>
-
-                            <td>
-                                <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
-                                    
-                                <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
-                            </td>
-
-                        
-                        </tr>
-                    <?php 
-                    }//closing bracket of foreach
-                    ?>
-                </tbody>
                 
-                <tfoot>
-                    <th scope="col">Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </tfoot>
+                ?>
 
-            </table>
+                <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
+                    <?php echo $_SESSION['message'] ?>
+                </div>
+                
+                <?php 
+                    unset($_SESSION['message']);
+                }
+                ?>
 
-            <!---wine-->
+                <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
+                    <thead class="table-dark">
+                        <th scope="col">Dish Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </thead>
 
-            <a href="#addWine" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Wine</a>
+                    <tbody>
 
-            <?php 
+                    <?php 
 
-            if(isset($_SESSION['message'])){
+                        $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
 
-            
-            ?>
+                        foreach($file->wine as $rows) {
+                        ?>
 
-            <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
-                <?php echo $_SESSION['message'] ?>
-            </div>
-            
-            <?php 
-                unset($_SESSION['message']);
-            }
-            ?>
+                            <tr>
+                                <td><?php echo $rows->code; ?></td>
+                                <td><?php echo $rows->category; ?></td>
+                                <td><?php echo $rows->name; ?></td>
+                                <td><?php echo $rows->price; ?></td>
 
-            <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
-                <thead class="table-dark">
-                    <th scope="col">Dish Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </thead>
+                                <td>
+                                    <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
+                                        
+                                    <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+                                </td>
 
-                <tbody>
+                            <?php include "edit_delete_modal.php"; ?>
+                            
+                            </tr>
+                        <?php 
+                        }//closing bracket of foreach
+                        ?>
+                    </tbody>
+                    
+                    <tfoot>
+                        <th scope="col">Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </tfoot>
+
+                </table>
+
+                <!---Specialties-->
+                <a href="#addSpecialties" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Specialties</a>
 
                 <?php 
 
-                    $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
+                if(isset($_SESSION['message'])){
 
-                    foreach($file->wine as $rows) {
-                    ?>
-
-                        <tr>
-                            <td><?php echo $rows->code; ?></td>
-                            <td><?php echo $rows->category; ?></td>
-                            <td><?php echo $rows->name; ?></td>
-                            <td><?php echo $rows->price; ?></td>
-
-                            <td>
-                                <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
-                                    
-                                <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
-                            </td>
-
-                        
-                        </tr>
-                    <?php 
-                    }//closing bracket of foreach
-                    ?>
-                </tbody>
                 
-                <tfoot>
-                    <th scope="col">Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </tfoot>
+                ?>
 
-            </table>
-
-            <!---Specialties-->
-            <a href="#addSpecialties" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Specialties</a>
-
-            <?php 
-
-            if(isset($_SESSION['message'])){
-
-            
-            ?>
-
-            <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
-                <?php echo $_SESSION['message'] ?>
-            </div>
-            
-            <?php 
-                unset($_SESSION['message']);
-            }
-            ?>
-
-            <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
-                <thead class="table-dark">
-                    <th scope="col">Dish Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </thead>
-
-                <tbody>
-
+                <div class="alert alert-info text-center" style="margin-top:20px; width: 100%;">
+                    <?php echo $_SESSION['message'] ?>
+                </div>
+                
                 <?php 
+                    unset($_SESSION['message']);
+                }
+                ?>
 
-                    $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
+                <table class="table table-sm table-striped table-condensed" style="margin-top:20px;">
+                    <thead class="table-dark">
+                        <th scope="col">Dish Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </thead>
 
-                    foreach($file->specialties as $rows) {
-                    ?>
+                    <tbody>
 
-                        <tr>
-                            <td><?php echo $rows->code; ?></td>
-                            <td><?php echo $rows->category; ?></td>
-                            <td><?php echo $rows->name; ?></td>
-                            <td><?php echo $rows->price; ?></td>
-
-                            <td>
-                                <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
-                                    
-                                <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
-                            </td>
-
-                        
-                        </tr>
                     <?php 
-                    }//closing bracket of foreach
-                    ?>
-                </tbody>
-                
-                <tfoot>
-                    <th scope="col">Code</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Dish Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
-                </tfoot>
 
-            </table>
+                        $file = simplexml_load_file('files/Hizole_IT2C_finalproject_KainNa.xml');
+
+                        foreach($file->specialties as $rows) {
+                        ?>
+
+                            <tr>
+                                <td><?php echo $rows->code; ?></td>
+                                <td><?php echo $rows->category; ?></td>
+                                <td><?php echo $rows->name; ?></td>
+                                <td><?php echo $rows->price; ?></td>
+
+                                <td>
+                                    <a href="#edit_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
+                                        
+                                    <a href="#delete_<?php echo $rows->code; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
+                                </td>
+
+                            <?php include "edit_delete_modal.php"; ?>
+                            
+                            </tr>
+                        <?php 
+                        }//closing bracket of foreach
+                        ?>
+                    </tbody>
+                    
+                    <tfoot>
+                        <th scope="col">Code</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </tfoot>
+
+                </table>
+            </div>
         </div>
-    </div>
-</body>
+
+        <script src="bootstrap/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

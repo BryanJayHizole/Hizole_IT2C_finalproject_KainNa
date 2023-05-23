@@ -19,12 +19,12 @@
         <name>Fried Chicken</name>
         <price>P150</price>
     </dinner>
-    <desert>
+    <dessert>
         <code>D1</code>
-        <category>Desert</category>
+        <category>Dessert</category>
         <name>Ice Cream</name>
         <price>P120</price>
-    </desert>
+    </dessert>
     <drinks>
         <code>E1</code>
         <category>Drinks</category>
